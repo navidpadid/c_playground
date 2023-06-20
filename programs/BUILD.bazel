@@ -1,0 +1,13 @@
+# load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "test-datastructs",
+    srcs = [
+        "test_datastructs.c",
+        "test_sort.c",
+        ],
+    deps = [
+        "//lib_datastructs:lib-datastructs",
+        "//lib_sort:lib-sorts"
+    ],
+)

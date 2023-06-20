@@ -1,0 +1,11 @@
+# load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "lib-datastructs",
+    srcs = glob(["*.c"]),
+    hdrs = glob(["*.h"]),
+    visibility = [
+        "//programs:__pkg__",
+        "//lib_sort:__pkg__"
+        ],
+)
